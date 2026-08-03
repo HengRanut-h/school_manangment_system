@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>School_Management_System</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.26"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="src\" />
+      <Folder Include="src\SchoolManagement.Api\" />
+      <Folder Include="src\SchoolManagement.Application\" />
+      <Folder Include="src\SchoolManagement.Infrastructure\" />
+      <Folder Include="src\SchoolManagement.Persistence\" />
+      <Folder Include="src\SchoolManagement.Worker\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="src\SchoolManagement.Worker\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="src\SchoolManagement.Worker\obj\SchoolManagement.Worker.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="src\SchoolManagement.Api\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="src\SchoolManagement.Api\obj\SchoolManagement.Api.csproj.nuget.dgspec.json" />
+    </ItemGroup>
+
+</Project>
